@@ -15,8 +15,7 @@ The Page Object Model stands out as a widely embraced design pattern for buildin
 
 Before you begin, ensure you have the following installed:
 
-- Node.js (https://nodejs.org/) 
-- npm (Node Package Manager) 
+- Node.js (https://nodejs.org/)  npm (Node Package Manager) 
 - Playwright (https://playwright.dev/)
 
 ## Getting Started
