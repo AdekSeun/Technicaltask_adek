@@ -15,7 +15,8 @@ The Page Object Model stands out as a widely embraced design pattern for buildin
 
 Before you begin, ensure you have the following installed:
 
-- Node.js (https://nodejs.org/) npm (Node Package Manager) - Playwright (https://playwright.dev/)
+- Node.js (https://nodejs.org/) npm (Node Package Manager) 
+- Playwright (https://playwright.dev/)
 
 ## Getting Started
 
@@ -63,9 +64,17 @@ npm run open-allure-report
 
 ### Project Structure:
 
-`pageobject` contains Page Object classes, each representing a different page of the application. (Referer to Allpagemanager.js to see how other pages have been refrenced tests: Houses the actual test scripts using Playwright and the Page Object Model.(prouductapagetest.spec.js) Testutils: Includes test data for the automated test for data driven purpose package.json: Node.js package file containing project metadata and dependencies. playwright.config.js: Configuration file for Playwright.
+`pageobject` 
+- PageObject folder: contains all the different pages created for the application, with AllManager.js serving as the main page that manages all other pages in this project.
 
-Writing Tests: Create your test scripts inside the tests directory. Follow the Page Object Model pattern by interacting with the application through the methods provided in the pageobject classes.
+- MainPage.js: contains the method used to perform actions on the OurCategory page, such as accepting cookies, clicking, and verifying the landing page title. It follows the sequence for Category.js, Subcategory.js, and Product Page. AllPageManager.js serves as the main page and is imported into the productpagetest.spec.js to reduce the task of creating objects for each page.
+
+- Tests folder: consists of the test for the task (productpagetest.spec.js), which serves as the entry point. It contains the description of the task and utilizes the data-driven approach to call data from the TestUtils folder and methods created in different pages of the project. Different actions are separated by comments (//) to indicate actions for each page. The test script verifies each landing page and product text while capturing the product page for final verification, attached to the test protocol page.
+
+- Testutils: This contains the test data and being called from the test scrip page
+
+- Writing Tests: 
+Create your test scripts inside the tests directory. Follow the Page Object Model pattern by interacting with the application through the methods provided in the pageobject classes.
 
 
 
