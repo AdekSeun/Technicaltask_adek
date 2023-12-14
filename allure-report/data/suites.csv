@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Dec 14 00:49:02 CET 2023","Thu Dec 14 00:49:24 CET 2023","22075","chromium","UIbasicstest.spec.js","","","","selectProduct Single Cut Guitars",""
+"passed","Thu Dec 14 00:49:01 CET 2023","Thu Dec 14 00:49:22 CET 2023","21064","chromium","UIbasicstest.spec.js","","","","selectProduct Drum Hardware Sets",""
