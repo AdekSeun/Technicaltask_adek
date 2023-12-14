@@ -21,49 +21,49 @@ Before you begin, ensure you have the following installed:
 
 - Clone this repository:
 
-
+```
 git clone https://github.com/AdekSeun/Technicaltask_adek.git
-
+```
 
 - Install dependencies
 
-
+```
 npm install
-
+```
 
 - Run tests
 
-
+```
 npx playwright test --headed
-
+```
 
 - Show result
 
-
+```
 npx playwright show-report
-
+```
 
 - with allurer report
 
-
+```
 npx playwright test --grep @selectProduct --reporter=line,allure-playwright
-
+```
 
 - To generate allure report
 
-
+```
 npx allure generate my-allure-results -o allure-report --clean
-
+```
 
 - To open allure report
 
-
+```
 npx allure open allure-report
-
+```
 
 ### Project Structure:
 
-pageobject contains Page Object classes, each representing a different page of the application. (Referer to Allpagemanager.js to see how other pages have been refrenced tests: Houses the actual test scripts using Playwright and the Page Object Model.(prouductapagetest.spec.js) Testutils: Includes test data for the automated test for data driven purpose package.json: Node.js package file containing project metadata and dependencies. playwright.config.js: Configuration file for Playwright.
+`pageobject` contains Page Object classes, each representing a different page of the application. (Referer to Allpagemanager.js to see how other pages have been refrenced tests: Houses the actual test scripts using Playwright and the Page Object Model.(prouductapagetest.spec.js) Testutils: Includes test data for the automated test for data driven purpose package.json: Node.js package file containing project metadata and dependencies. playwright.config.js: Configuration file for Playwright.
 
 Writing Tests: Create your test scripts inside the tests directory. Follow the Page Object Model pattern by interacting with the application through the methods provided in the pageobject classes.
 
