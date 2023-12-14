@@ -21,43 +21,43 @@ Before you begin, ensure you have the following installed:
 
 - Clone this repository:
 
-bash
+
 git clone https://github.com/AdekSeun/Technicaltask_adek.git
 
 
 - Install dependencies
 
-js
+
 npm install
 
 
 - Run tests
 
-js
+
 npx playwright test --headed
 
 
 - Show result
 
-js
+
 npx playwright show-report
 
 
 - with allurer report
 
-js
+
 npx playwright test --grep @selectProduct --reporter=line,allure-playwright
 
 
 - To generate allure report
 
-js
+
 npx allure generate my-allure-results -o allure-report --clean
 
 
 - To open allure report
 
-js
+
 npx allure open allure-report
 
 
