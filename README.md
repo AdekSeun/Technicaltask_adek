@@ -34,31 +34,31 @@ npm install
 - Run tests
 
 ```
-npx playwright test --headed
+npm run test
 ```
 
 - Show result
 
 ```
-npx playwright show-report
+npm run show-report
 ```
 
 - with allurer report
 
 ```
-npx playwright test --grep @selectProduct --reporter=line,allure-playwright
+npm run test-with-report
 ```
 
 - To generate allure report
 
 ```
-npx allure generate my-allure-results -o allure-report --clean
+npm run generate-allure-report
 ```
 
 - To open allure report
 
 ```
-npx allure open allure-report
+npm run open-allure-report
 ```
 
 ### Project Structure:
@@ -67,8 +67,6 @@ npx allure open allure-report
 
 Writing Tests: Create your test scripts inside the tests directory. Follow the Page Object Model pattern by interacting with the application through the methods provided in the pageobject classes.
 
-Run Tests: Execute the following command to run the test from the terminal Run test: npx playwright test --headed Show result: npx playwright show -report
 
-with allurer report npx Playwright test --grep @selectProduct --reporter=line,allure-playwright allure generate ./allure-results --clean allure open ./allure-results
 
 /\*The assertions and methods created have been used for the sake of the task. Playwright provides additional methods that can be used for different scenarios, as well as more assertions. For more information, refer to https://playwright.dev/docs/intro.

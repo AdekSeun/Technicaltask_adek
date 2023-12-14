@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test --headed",
+    "show-report": "playwright show-report",
+    "test-with-report": "playwright test --grep @selectProduct --reporter=line,allure-playwright",
+    "generate-allure-report": "allure generate my-allure-results -o allure-report",
+    "open-allure-report": "allure open allure-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
